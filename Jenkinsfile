@@ -3,7 +3,7 @@ pipeline{
         stages{
             stage('Clean Directory'){
                 steps{
-                    sh "rm -f ~/jenkins-tutorial-test"
+                    sh "rm -r ~/jenkins-tutorial-test"
                 }
             }
             stage('Make Directory'){
